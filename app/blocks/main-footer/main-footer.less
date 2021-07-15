@@ -1,0 +1,36 @@
+.main-footer {
+  padding-top: 22px;
+  padding-bottom: 37px;
+
+  background-color: #2f3132;
+
+  &__copyright {
+    max-width: 85px;
+    margin: 0 auto;
+
+    font-size: 7px;
+    line-height: 8px;
+    color: #c7c8c8;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet) {
+  .main-footer {
+    padding-top: 47px;
+    padding-bottom: 71px;
+
+    &__copyright {
+      max-width: 170px;
+
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (min-width: @tablet-horizontal) {
+  .main-footer {
+    padding-top: 48px;
+  }
+}

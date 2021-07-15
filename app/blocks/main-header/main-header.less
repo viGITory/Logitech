@@ -1,0 +1,83 @@
+.main-header {
+  padding: 25px 0;
+
+  background-color: #2f3132;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__logo,
+  &__button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  &__logo {
+    display: block;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
+
+    background-image: url("assets/svg/logitech-logo-light.svg");
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 24px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+
+    cursor: pointer;
+    background-image: url("assets/svg/menu-x.svg");
+    border: none;
+  }
+}
+
+@media (min-width: @tablet) {
+  .main-header {
+    padding: 64px 0;
+
+    &__logo {
+      width: 240px;
+      height: 72px;
+    }
+
+    &__button {
+      right: 83px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+@media (min-width: @tablet-horizontal) {
+  .main-header {
+    padding-top: 27px;
+    padding-bottom: 28px;
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    &__logo {
+      width: 150px;
+      height: 45px;
+      margin: 0;
+
+      background-image: url("assets/svg/logitech-logo-light.svg");
+    }
+
+    &__button {
+      display: none;
+    }
+  }
+}

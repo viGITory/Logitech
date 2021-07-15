@@ -1,0 +1,84 @@
+.speed {
+  background-color: #fff;
+
+  &__inner {
+    padding-bottom: 309px;
+
+    background-image: url("assets/images/speed-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 375px auto;
+  }
+
+  &__title {
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .speed {
+    &__inner {
+      padding-bottom: 580px;
+
+      background-image: url("assets/images/speed-bg@tablet.jpg");
+      background-size: 894px auto;
+    }
+
+    &__title {
+      max-width: 352px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: @tablet-horizontal) {
+  .speed {
+    padding-top: 0;
+
+    &__inner {
+      min-width: 1280px;
+      padding-top: 161px;
+      padding-right: 672px;
+      padding-bottom: 162px;
+
+      background-image: url("assets/images/speed-bg@tablet-horizontal.png");
+      background-position: right center;
+      background-size: 640px auto;
+    }
+
+    &__title,
+    &__text {
+      margin-right: 0;
+
+      text-align: right;
+    }
+
+    &__title {
+      margin-bottom: 34px;
+    }
+
+    &__text {
+      max-width: 335px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .speed {
+    padding-bottom: 99px;
+
+    &__inner {
+      max-width: 1310px;
+      padding-right: 687px;
+      margin: 0 auto;
+
+      background-image: url("assets/images/speed-bg@desktop.png");
+      background-size: 655px auto;
+    }
+  }
+}

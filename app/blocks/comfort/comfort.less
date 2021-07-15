@@ -1,0 +1,82 @@
+.comfort {
+  background-color: #fff;
+
+  &__inner {
+    padding-bottom: 309px;
+
+    background-image: url("assets/images/comfort-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 375px auto;
+  }
+
+  &__title {
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .comfort {
+    &__inner {
+      padding-bottom: 579px;
+
+      background-image: url("assets/images/comfort-bg@tablet.jpg");
+      background-size: 894px auto;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: @tablet-horizontal) {
+  .comfort {
+    padding-top: 0;
+
+    &__inner {
+      min-width: 1280px;
+      padding: 122px 0;
+      padding-left: 676px;
+
+      background-image: url("assets/images/comfort-bg@tablet-horizontal.png");
+      background-position: left center;
+      background-size: 640px auto;
+    }
+
+    &__title,
+    &__text {
+      margin: 0;
+
+      text-align: left;
+    }
+
+    &__title {
+      max-width: 281px;
+      margin-bottom: 28px;
+    }
+
+    &__text {
+      max-width: 400px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .comfort {
+    padding-top: 100px;
+
+    &__inner {
+      max-width: 1310px;
+      padding-left: 691px;
+      margin: 0 auto;
+
+      background-image: url("assets/images/comfort-bg@desktop.png");
+      background-size: 655px auto;
+    }
+  }
+}

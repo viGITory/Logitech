@@ -1,0 +1,283 @@
+.settings {
+  background-color: #ededed;
+
+  &__title {
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    margin-bottom: 34px;
+  }
+
+  &__slider,
+  &__list,
+  &__indicators {
+    margin: 0 auto;
+  }
+
+  &__slider {
+    max-width: 330px;
+    height: 404px;
+
+    & img {
+      max-width: 100%;
+      height: auto;
+
+      object-fit: cover;
+    }
+  }
+
+  &__image {
+    display: none;
+  }
+
+  &__button,
+  &__special {
+    background-color: #c4c4c4 !important;
+  }
+
+  &__indicators,
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__indicators {
+    position: static !important;
+    max-width: 165px;
+    margin-top: 21px;
+    margin-bottom: 60px;
+  }
+
+  &__button {
+    width: 15px !important;
+    height: 15px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    border: none !important;
+    border-radius: 50%;
+  }
+
+  &__button.active {
+    background-color: #2f3132 !important;
+  }
+
+  &__special {
+    padding-top: 23px;
+    padding-bottom: 25px;
+  }
+
+  &__list {
+    flex-wrap: wrap;
+    max-width: 324px;
+    padding: 0;
+    margin-bottom: 20px;
+
+    list-style: none;
+  }
+
+  &__list-item {
+    height: 23px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    &--photoshop {
+      width: 23px;
+
+      background-image: url("assets/svg/photoshop-icon.svg");
+    }
+
+    &--premiere {
+      width: 24px;
+
+      background-image: url("assets/svg/premiere-icon.svg");
+    }
+
+    &--browsers {
+      width: 52px;
+
+      background-image: url("assets/svg/browsers-icon.svg");
+    }
+
+    &--word,
+    &--powerpoint {
+      width: 26px;
+    }
+
+    &--word {
+      background-image: url("assets/svg/word-icon.svg");
+    }
+
+    &--powerpoint {
+      background-image: url("assets/svg/powerpoint-icon.svg");
+    }
+
+    &--excel {
+      width: 25px;
+
+      background-image: url("assets/svg/excel-icon.svg");
+    }
+
+    &--final-cut {
+      width: 22px;
+
+      background-image: url("assets/svg/final-cut-icon.svg");
+    }
+  }
+
+  &__special-text {
+    margin-bottom: 0;
+
+    color: #fff;
+  }
+}
+
+@media (min-width: @tablet) {
+  .settings {
+    padding-top: 69px;
+    padding-bottom: 70px;
+
+    &__title {
+      max-width: 464px;
+      margin-bottom: 29px;
+    }
+
+    &__text {
+      margin-bottom: 54px;
+    }
+
+    &__slider {
+      max-width: 497px;
+      height: 610px;
+    }
+
+    &__indicators {
+      max-width: 275px;
+      margin-top: 53px;
+      margin-bottom: 70px;
+    }
+
+    &__button {
+      width: 25px !important;
+      height: 25px !important;
+    }
+
+    &__special {
+      max-width: 765px;
+      padding-top: 38px;
+      padding-bottom: 29px;
+      margin: 0 auto;
+    }
+
+    &__list {
+      max-width: 512px;
+      margin-bottom: 25px;
+    }
+
+    &__list-item {
+      height: 35px;
+
+      &--photoshop,
+      &--premiere {
+        width: 36px;
+      }
+
+      &--photoshop {
+        background-image: url("assets/svg/photoshop-icon.svg");
+      }
+
+      &--premiere {
+        background-image: url("assets/svg/premiere-icon.svg");
+      }
+
+      &--browsers {
+        width: 80px;
+
+        background-image: url("assets/svg/browsers-icon.svg");
+      }
+
+      &--word {
+        width: 39px;
+
+        background-image: url("assets/svg/word-icon.svg");
+      }
+
+      &--powerpoint {
+        width: 40px;
+
+        background-image: url("assets/svg/powerpoint-icon.svg");
+      }
+
+      &--excel {
+        width: 37px;
+
+        background-image: url("assets/svg/excel-icon.svg");
+      }
+
+      &--final-cut {
+        width: 34px;
+
+        background-image: url("assets/svg/final-cut-icon.svg");
+      }
+    }
+
+    &__special-text {
+      max-width: 625px;
+
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+}
+
+@media (min-width: @tablet-horizontal) {
+  .settings {
+    padding-top: 56px;
+
+    & .carousel {
+      display: none;
+    }
+
+    &__title,
+    &__image {
+      max-width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 38px;
+    }
+
+    &__text {
+      max-width: 790px;
+    }
+
+    &__image {
+      display: block;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    &__special {
+      max-width: 749px;
+      margin-top: -58px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .settings {
+    padding-top: 100px;
+    padding-bottom: 99px;
+
+    &__text {
+      margin-bottom: 71px;
+    }
+
+    &__special {
+      margin-top: -55px;
+    }
+  }
+}

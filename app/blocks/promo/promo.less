@@ -1,0 +1,94 @@
+.promo {
+  padding-top: 68px;
+  padding-bottom: 48px;
+
+  background-color: #e0e1e2;
+
+  &__inner,
+  &__button {
+    background-repeat: no-repeat;
+  }
+
+  &__inner {
+    background-image: url("assets/images/promo-bg.png");
+    background-position: top center;
+    background-size: 375px auto;
+  }
+
+  &__title {
+    margin-bottom: 275px;
+  }
+
+  &__text {
+    max-width: 257px;
+    margin-bottom: 37px;
+  }
+
+  &__button {
+    width: 42px;
+    height: 22px;
+    padding: 0;
+
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("assets/svg/promo-arrow.svg");
+    background-position: center center;
+    background-size: contain;
+    border: none;
+  }
+}
+
+@media (min-width: @tablet) {
+  .promo {
+    padding-top: 86px;
+    padding-bottom: 78px;
+
+    &__inner {
+      background-image: url("assets/images/promo-bg@tablet.png");
+      background-size: 894px auto;
+    }
+
+    &__title {
+      margin-bottom: 591px;
+    }
+
+    &__text {
+      max-width: 585px;
+      margin-bottom: 69px;
+    }
+
+    &__button {
+      width: 61px;
+      height: 31px;
+    }
+  }
+}
+
+@media (min-width: @tablet-horizontal) {
+  .promo {
+    padding-top: 70px;
+    padding-bottom: 55px;
+
+    &__inner {
+      background-image: url("assets/images/promo-bg@tablet-horizontal.png");
+      background-position: top -80px center;
+      background-size: 1166px auto;
+    }
+
+    &__title {
+      margin-bottom: 557px;
+    }
+
+    &__text {
+      max-width: 100%;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}

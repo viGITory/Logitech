@@ -1,0 +1,319 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title
+      | Logitech
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous")
+    link(rel="stylesheet" href="styles.css")
+
+  body.page
+    //- *** HEADER ***
+    header.main-header
+      div.main-header__inner
+        h1.visually-hidden
+          | Компьютерная мышь Logitech MX Master 3
+        a.main-header__logo(href="#")
+          span.visually-hidden
+            | Логотип Logitech
+        nav.main-header__menu
+          ul.main-menu
+            li.main-menu__item
+              a.section__title.main-menu__link(href="#bluetooth")
+                | Без проводов
+              a.main-menu__link.main-menu__link--desktop(href="#bluetooth")
+                | Работайте без проводов
+            li.main-menu__item
+              a.section__title.main-menu__link(href="#surface")
+                | За любым столом
+              a.main-menu__link.main-menu__link--desktop(href="#surface")
+                | Где угодно
+            li.main-menu__item
+              a.section__title.main-menu__link(href="#flow")
+                | Одновременно с нескольких устройств
+              a.main-menu__link.main-menu__link--desktop(href="#comfort")
+                | С комфортом
+            li.main-menu__item
+              a.section__title.main-menu__link(href="#settings")
+                | С индивидуальными настройками
+              a.main-menu__link.main-menu__link--desktop(href="#flow")
+                | С разных устройств
+            li.main-menu__item
+              a.section__title.main-menu__link(href="#speed")
+                span.section__title-item
+                  | Быстрее,
+                span
+                  | чем когда либо
+              a.main-menu__link.main-menu__link--desktop(href="#settings")
+                | В любое время
+            li.main-menu__item
+              a.section__title.main-menu__link(href="#comfort")
+                span.section__title-item
+                  | Комфортно.
+                span
+                  | Эргономично. Интуитивно.
+              a.main-menu__link.main-menu__link--desktop(href="#speed")
+                | И еще быстрее
+        button.main-header__button(type="button")
+          span.visually-hidden
+            | Кнопка меню
+
+    //- *** MAIN ***
+    main
+      //- *** PROMO ***
+      section.section.promo
+        div.container
+          div.promo__inner
+            h2.section__title.promo__title
+              | Работайте продуктивнее
+            p.section__text.promo__text
+              | Создана для эффективной работы,
+              | программирования и творчества
+            button.promo__button(type="button")
+              span.visually-hidden
+                | Кнопка вниз
+
+      //- *** BLUETOOTH ***
+      section.section.bluetooth#bluetooth
+        div.container
+          div.bluetooth__inner
+            h2.section__title.bluetooth__title
+              | Без проводов
+            p.section__text.bluetooth__text
+              | Беспроводная мышь MX Master 3 работает
+              | без проводов до нескольких месяцев.
+              | Вы закроете приоритетные задачи прежде,
+              | чем понадобится подзарядка.
+            p.bluetooth__subtitle
+              span.bluetooth__subtitle-item 70
+              span дней
+
+      //- *** SURFACE ***
+      section.section.surface#surface
+        div.container
+          h2.section__title.surface__title
+            | За любым столом
+          p.section__text.surface__text
+            | Исследуйте ландшафты своего дома,
+            | не отвлекаясь от работы. MX Master
+            | 3 достаточно компактная, чтобы сменить
+            | рабочее место и перенестись с ноутбуком на кухню.
+          div.surface__feature-group
+            div.surface__feature
+              p.section__title.surface__feature-title
+                | В 5 раз
+              p.surface__feature-text
+                | точнее предшественников
+            div.surface__feature
+              p.section__title.surface__feature-title
+                | 4 000
+              p.surface__feature-text
+                | точек на дюйм чувствительность датчика
+          div#carouselExampleIndicators.carousel.slide(data-bs-ride="carousel")
+            div.surface__slider.carousel-inner
+              div.carousel-item.active
+                picture
+                  source(srcset="assets/images/wood@tablet-horizontal.png 1x" media="(min-width:1280px)" type="image/png")
+                  source(srcset="assets/images/wood@tablet.png 1x" media="(min-width:894px)" type="image/png")
+                  img(src="assets/images/wood.png" alt="Компьютерная мышь MX Master 3 на деревянной поверхности")
+              div.carousel-item
+                picture
+                  source(srcset="assets/images/glass@tablet-horizontal.png 1x" media="(min-width:1280px)" type="image/png")
+                  source(srcset="assets/images/glass@tablet.png 1x" media="(min-width:894px)" type="image/png")
+                  img.d-block(src="assets/images/glass.png" alt="Компьютерная мышь MX Master 3 на стеклянной поверхности")
+              div.carousel-item
+                picture
+                  source(srcset="assets/images/linoleum@tablet-horizontal.png 1x" media="(min-width:1280px)" type="image/png")
+                  source(srcset="assets/images/linoleum@tablet.png 1x" media="(min-width:894px)" type="image/png")
+                  img.d-block(src="assets/images/linoleum.png" alt="Компьютерная мышь MX Master 3 на линолеуме")
+              div.carousel-item
+                picture
+                  source(srcset="assets/images/cloth@tablet-horizontal.png 1x" media="(min-width:1280px)" type="image/png")
+                  source(srcset="assets/images/cloth@tablet.png 1x" media="(min-width:894px)" type="image/png")
+                  img(src="assets/images/cloth.png" alt="Компьютерная мышь MX Master 3 на тканевой поверхности")
+              div.carousel-item
+                picture
+                  source(srcset="assets/images/marble@tablet-horizontal.png 1x" media="(min-width:1280px)" type="image/png")
+                  source(srcset="assets/images/marble@tablet.png 1x" media="(min-width:894px)" type="image/png")
+                  img(src="assets/images/marble.png" alt="Компьютерная мышь MX Master 3 на мраморной поверхности")
+            p.surface__subtitle
+              | Переключите поверхность
+            div.surface__indicators.carousel-indicators
+              button.surface__arrow(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-label="Предыдущий слайд")
+                span.visually-hidden
+                  | Предыдущий
+              button.surface__button.surface__button--wood.active(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1")
+                span.visually-hidden
+                  | Дерево
+              button.surface__button.surface__button--glass(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2")
+                span.visually-hidden
+                  | Стекло
+              button.surface__button.surface__button--linoleum(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3")
+                span.visually-hidden
+                  | Линолеум
+              button.surface__button.surface__button--cloth(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4")
+                span.visually-hidden
+                  | Ткань
+              button.surface__button.surface__button--marble(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5")
+                span.visually-hidden
+                  | Мрамор
+              button.surface__arrow.surface__arrow--next(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" aria-label="Следующий слайд")
+                span.visually-hidden
+                  | Следующий
+          p.section__text.surface__slider-text
+            | Благодаря технологии Logitech Darkfierd,
+            | MX Master 3 работает на любой поверхности,
+            | даже на стекле.
+
+      //- *** FLOW ***
+      section.section.flow#flow
+        div.container
+          div.flow__inner
+            h2.section__title.flow__title
+              | Одновременно с нескольких устройств
+            p.section__text.flow__text
+              | С технологией Flow вы сможете работать одновременно
+              | на нескольких компьютерах, мгновенно переключаясь
+              | между разными операционными системами — даже между
+              | Windows® и macOS. Например, достаточно скопировать текст,
+              | изображение или файл на MacBook и переместить его на
+              | Windows PC без задержек.
+            p.section__text.flow__text
+              | Клавиатура MX Keys отслеживает перемещение курсора мыши
+              | MX Master 3, благодаря чему ваш текст появится там,
+              | где вы работаете в текущий момент.
+            ol.flow__list
+              li.flow__list-item
+                | Нажмите и удерживайте папку, чтобы переместить её
+              li.flow__list-item
+                | Перенесите папку на любой из соседних экранов
+              li.flow__list-item
+                | Да, всё так просто!
+
+      //- *** SETTINGS ***
+      section.section.settings#settings
+        div.container
+          h2.section__title.settings__title
+            | С индивидуальными настройками
+          p.section__text.settings__text
+            | Мышь MX Master 3 адаптируется под ваши рабочие процессы.
+            | Благодаря индивидуальным настройкам, вы сможете
+            | настроить кнопки и жесты практически под любое
+            | используемое приложение.
+          div#carouselExampleIndicators2.carousel.slide(data-bs-ride="carousel")
+              div.settings__slider.carousel-inner
+                div.carousel-item.active
+                  picture
+                    source(srcset="assets/images/settings-slider1@tablet.png 1x" media="(min-width:894px)" type="image/png")
+                    img(src="assets/images/settings-slider1.png" alt="...")
+                div.carousel-item
+                   picture
+                    source(srcset="assets/images/settings-slider2@tablet.png 1x" media="(min-width:894px)" type="image/png")
+                    img(src="assets/images/settings-slider2.png" alt="...")
+                div.carousel-item
+                  picture
+                    source(srcset="assets/images/settings-slider3@tablet.png 1x" media="(min-width:894px)" type="image/png")
+                    img(src="assets/images/settings-slider3.png" alt="...")
+                div.carousel-item
+                   picture
+                    source(srcset="assets/images/settings-slider4@tablet.png 1x" media="(min-width:894px)" type="image/png")
+                    img(src="assets/images/settings-slider4.png" alt="...")
+                div.carousel-item
+                   picture
+                    source(srcset="assets/images/settings-slider5@tablet.png 1x" media="(min-width:894px)" type="image/png")
+                    img(src="assets/images/settings-slider5.png" alt="...")
+                div.carousel-item
+                   picture
+                    source(srcset="assets/images/settings-slider6@tablet.png 1x" media="(min-width:894px)" type="image/png")
+                    img(src="assets/images/settings-slider6.png" alt="...")
+              div.settings__indicators.carousel-indicators
+                button.settings__button.active(type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1")
+                  span.visually-hidden
+                    | Слайд 1
+                button.settings__button(type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2")
+                  span.visually-hidden
+                    | Слайд 2
+                button.settings__button(type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3")
+                  span.visually-hidden
+                    | Слайд 3
+                button.settings__button(type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 4")
+                  span.visually-hidden
+                    | Слайд 4
+                button.settings__button(type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4" aria-label="Slide 5")
+                  span.visually-hidden
+                    | Слайд 5
+                button.settings__button(type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5" aria-label="Slide 6")
+                  span.visually-hidden
+                    | Слайд 6
+          img.settings__image(src="assets/images/settings-bg.png" width="1171" height="698" alt="")
+          div.settings__special
+            ul.settings__list
+              li.settings__list-item.settings__list-item--photoshop
+                span.visually-hidden
+                  | Логотип Adobe Photoshop
+              li.settings__list-item.settings__list-item--premiere
+                span.visually-hidden
+                  | Логотип Adobe Premiere
+              li.settings__list-item.settings__list-item--browsers
+                span.visually-hidden
+                  | Логотипы Google Chrome,
+                  | Safari, Internet Explorer
+              li.settings__list-item.settings__list-item--word
+                span.visually-hidden
+                  | Логотип Microsoft Word
+              li.settings__list-item.settings__list-item--powerpoint
+                span.visually-hidden
+                  | Логотип Microsoft PowerPoint
+              li.settings__list-item.settings__list-item--excel
+                span.visually-hidden
+                  | Логотип Microsoft Excel
+              li.settings__list-item.settings__list-item--final-cut
+                span.visually-hidden
+                  | Логотип Final Cut Pro
+            p.section__text.settings__special-text
+              | Начните работать продуктивнее с момента покупки —
+              | устройство предварительно оптимизировано под популярные
+              | приложения на Windows и Mac.
+
+      //- *** COMFORT ***
+      section.section.comfort#comfort
+        div.container
+          div.comfort__inner
+            h2.section__title.comfort__title
+              span.section__title-item
+                | Комфортно.
+              span
+                | Эргономично. Интуитивно.
+            p.section__text.comfort__text
+              | Дизайн мыши MX Master 3 разработан так, чтобы
+              | с точностью повторять форму вашей ладони.
+              | Но не менее важны колесико прокрутки для большого
+              | пальца и расположение кнопок жестов, с которыми вы
+              | будете творить уверенно как никогда.
+
+      //- *** SPEED ***
+      section.section.speed#speed
+        div.container
+          div.speed__inner
+            h2.section__title.speed__title
+              span.section__title-item
+                | Быстрее,
+              span
+                | чем когда-либо
+            p.section__text.speed__text
+              | Компьютерная мышь MX Master 3 предлагает ультимативный
+              | механизм прокрутки со скоростью 1000 строк за 1 секунду.
+              | С точностью до пикселя. Бесшумно.
+
+    //- *** FOOTER ***
+    footer.main-footer
+      div.container
+        p.main-footer__copyright
+          | Copyright © 2021 Logitech
+          | Все права защищены
+
+    //- *** SCRIPTS ***
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous")
+
+    //- script(src="scripts/scripts.js")
